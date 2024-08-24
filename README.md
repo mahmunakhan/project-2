@@ -2,7 +2,7 @@
 
 This code is a Streamlit-based web application designed for Document Question Answering (Doc QA). The app allows users to upload a PDF document, select a pre-trained model, and ask questions related to the document. The app then processes the document and returns answers based on the selected model. Additionally, it can highlight the relevant sections of the document in the PDF file and display them as images.
 
-## Part 1: User Interface and Main Functionality
+## Part 1: User Interface and Main Functionality(app.py)
 
 ### Imports and Dependencies
 
@@ -24,7 +24,7 @@ The sidebar contains a description of the app, a dropdown for selecting the QA m
 
 Displays the uploaded PDF file, provides an input box for typing questions, and handles the question-answering process when the user clicks the "Submit" button. The results are displayed along with the option to view highlighted sections of the PDF.
 
-## Part 2: File Handling and PDF Processing
+## Part 2: File Handling and PDF Processing(docuploader.py)
 
 ### Storage Class
 
@@ -50,7 +50,7 @@ Displays the uploaded PDF file, provides an input box for typing questions, and 
 
 **`get_highlighted_image(pdf_path, search_sentence, answer)`:** Generates images from the PDF with highlighted sections that match the search sentence and answer. It returns a list of images with highlighted areas.
 
-## Part 3: Question Answering and Results Display
+## Part 3: Question Answering and Results Display(qa.py)
 
 ### Get Answer Function
 
